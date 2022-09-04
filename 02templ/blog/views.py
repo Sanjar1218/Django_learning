@@ -2,17 +2,18 @@ from django.shortcuts import render
 
 lst = [
     {
-        'name': 'Jane Doe',
-        'age': 23,
-        'job': 'devoloper',
-        'text': 'asdfaefa dafef ad'
+        'name': 'Blog post 1',
+        'author': 'CorayMS',
+        'content': 'First post content',
+        'date_posted': 'August 27, 2018'
     },
     {
-        'name': 'Sanjarbek Saidov',
-        'age': 20,
-        'job': 'backend',
-        'text': 'a;slkfjaef iasd;fkljae;f iajd;flkaj ;elkfj ae'
+        'name': 'Blog post 2',
+        'author': 'Jane Doe',
+        'content': 'Second post content',
+        'date_posted': 'August 28, 2018'
     }
+    
 ]
 # Create your views here.
 def home(request):
@@ -21,5 +22,5 @@ def home(request):
     }
     return render(request, 'pages/home.html', context=context)
 
-def room(request):
-    return render(request, 'pages/room.html')
+def about(request):
+    return render(request, 'pages/about.html')
