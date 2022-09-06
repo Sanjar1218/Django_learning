@@ -1,0 +1,9 @@
+{% extends 'pages/main.html' %}
+{% block content %}
+{% for i in rooms %}
+<p>{{ i.name }}</p>
+<p>{{ i.topic }}</p>
+<p>{{ i.description }}</p>
+<p>{{ i.theme }}</p>
+{% endfor %}
+{% endblock content %}
