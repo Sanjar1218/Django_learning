@@ -1,9 +1,12 @@
 {% extends 'pages/main.html' %}
 {% block content %}
+<p>Welcome home</p>
+<a href="/register">register</a>
 {% for i in rooms %}
 <p>{{ i.name }}</p>
 <p>{{ i.topic }}</p>
 <p>{{ i.description }}</p>
 <p>{{ i.theme }}</p>
+<p>{{ i.user }}</p>
 {% endfor %}
 {% endblock content %}
